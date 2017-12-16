@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Music Application</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <header class="flex">
+    <div class="logo">
+      <a class="logo-link" href="#/">
+        <i class="logo-icon fa fa-stumbleupon"></i>
+
+      </a>
+    </div>
+    <div class="form-group logo-search">
+      <div>
+        <input type="text" class="form-control" placeholder="Search music">
+        <i class="fa fa-search search-icon" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="form-group logo-cat">
+      <select class="form-control" id="sel1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+    </div>
+  </header>
+  <div class="content-wrap flex">
+    <div class="side-bar">
+      <ul>
+        <li id="user-menu" class="nav-item flex">
+
+            <a class="nav-link profile" href="#/pages/profile">
+              <img src="dist/images/user.png" alt="" class="img20_20 img-circle">
+              <span class="label helper-tooltip-measured">Joseph Guatemala</span>
+            </a>
+            <div class="actions">
+              <a class="action-btn" href="#/dashboard">
+                <i class="action-icon fa fa-bell"></i>
+              </a>
+              <i id="user-settings-btn" class="action-icon fa fa-gear"></i>
+            </div>
+
+          </li>
+        <li class="01 nav-item">
+          <a class="nav-link profile" href="#/dashboard">
+              <i class="icon fa fa-inbox"></i>
+              <span class="label helper-tooltip-measured">Dashboard</span>
+            </a>
+        </li>
+        <li class="02 nav-item active">
+          <a class="nav-link profile" href="#/artist-list">
+              <i class="icon fa fa-headphones"></i>
+              <span class="label helper-tooltip-measured">Artists</span>
+            </a>
+        </li>
+        <li class="03 nav-item">
+          <a class="nav-link profile" href="#/albums">
+            <i class="icon fa fa-bar-chart"></i>
+            <span class="label helper-tooltip-measured">Albums</span>
+          </a>
+        </li>
+        <li class="04 nav-item"></li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <div class="banner">
+        <div class="dashboard-banner__content">
+          <h2>
+            Find the Best songs, beat by beat
+          </h2>
+
+          <h5>
+            Groovy gives you access to the best music, anywhere. Start searching for songs by artist, album or genre and create your own
+            playlist to share with your friends
+          </h5>
+
+          <a class="btn btn-primary" href="#/artist-list">
+            Start searching
+          </a>
+
+        </div>
+      </div>
+      <div class="result">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="music-box">
+                <img class="img-fluid" src="img/artist1.jpg" alt="">
+                <p>Jason Derulo</p>
+              </div>
+            </div>
+            <div  class="col-md-3">
+              <div class="music-box">
+                <img class="img-fluid"  src="img/artist1.jpg" alt="">
+                <p>Jason Derulo</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="music-box">
+                <img class="img-fluid"  src="img/artist1.jpg" alt="">
+                <p>Jason Derulo</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="music-box">
+                <img class="img-fluid"  src="img/artist1.jpg" alt="">
+                <p>Jason Derulo</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="music-box">
+                <img class="img-fluid" src="img/artist1.jpg" alt="">
+                <p>Jason Derulo</p>
+              </div>
+            </div>
+            <div  class="col-md-3">
+              <div class="music-box">
+                <img class="img-fluid"  src="img/artist1.jpg" alt="">
+                <p>Jason Derulo</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="music-box">
+                <img class="img-fluid"  src="img/artist1.jpg" alt="">
+                <p>Jason Derulo</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="music-box">
+                <img class="img-fluid"  src="img/artist1.jpg" alt="">
+                <p>Jason Derulo</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="music-box">
+                <img class="img-fluid" src="img/artist1.jpg" alt="">
+                <p>Jason Derulo</p>
+              </div>
+            </div>
+            <div  class="col-md-3">
+              <div class="music-box">
+                <img class="img-fluid"  src="img/artist1.jpg" alt="">
+                <p>Jason Derulo</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="music-box">
+                <img class="img-fluid"  src="img/artist1.jpg" alt="">
+                <p>Jason Derulo</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="music-box">
+                <img class="img-fluid"  src="img/artist1.jpg" alt="">
+                <p>Jason Derulo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="music-cat">
+          <div class="m-c-box">
+            <img src="" alt="">
+            <p></p>
+          </div>
+          <div class="m-c-box">
+            <img src="" alt="">
+            <p></p>
+          </div>
+          <div class="m-c-box">
+            <img src="" alt="">
+            <p></p>
+          </div>
+          <div class="m-c-box">
+            <img src="" alt="">
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
