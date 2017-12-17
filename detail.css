@@ -1,0 +1,208 @@
+
+/* banner */
+.banner {
+  background: url('img/artistbanner1.jpg');
+  position: relative;
+height: 342px;
+margin: 0 auto;
+text-align: center;
+color: #fff;
+padding-top: 50px;
+padding-bottom: 50px;
+border-bottom: 2px solid #1FAE5B;
+background-size: cover;
+background-position: center;
+}
+
+.banner .artist-inner {
+    display: inline-block;
+    width: 50%;
+    max-width: 70%;
+    margin: 0;
+    vertical-align: middle;
+    position: relative;
+}
+
+.banner .artist-img img {
+    width: 100px;
+    height: auto;
+    padding: 4px;
+    border: 3px solid #fff;
+    border-bottom-color: transparent;
+}
+
+.banner .artist-style .artist-genre {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 700;
+}
+.banner .artist-style .artist-genre span:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0,0);
+    content: "\f111";
+    font-size: 8px;
+    margin-right: 5px;
+}
+/* end banner */
+
+/* Subheader */
+.btn-icon-sm {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+  }
+
+  .btn-twitter, .btn-twitter:focus, .btn-twitter:hover {
+    color: #fff;
+    background: #00c7f7;
+    border-color: #00c7f7;
+}
+
+.btn-icon {
+    display: inline-block;
+    text-align: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.btn-facebook, .btn-facebook:focus, .btn-facebook:hover {
+    color: #fff;
+    background: #335397;
+    border-color: #335397;
+}
+
+.btn-google-plus, .btn-google-plus:focus, .btn-google-plus:hover {
+    color: #fff;
+    background: #dd4a38;
+    border-color: #dd4a38;
+}
+
+.btn-pinterest, .btn-pinterest:focus, .btn-pinterest:hover {
+    color: #fff;
+    background: #bc2725;
+    border-color: #bc2725;
+}
+
+.btn-instagram, .btn-instagram:focus, .btn-instagram:hover {
+    color: #fff;
+    background: #82685a;
+    border-color: #82685a;
+}
+
+.artist-sub-header {
+    background: #fff;
+    padding: 5px 40px;
+    margin: 1em 0;
+}
+
+.artist-stats-block {
+  display: inline-block;
+}
+
+/* end subheader */
+
+/* Page */
+.page {
+    padding: 40px;
+    background-color: #e3e3e3;
+}
+
+.panel {
+  border: none;
+-webkit-box-shadow: 0 0 1px rgba(0,0,0,.1);
+-moz-box-shadow: 0 0 1px rgba(0,0,0,.1);
+-ms-box-shadow: 0 0 1px rgba(0,0,0,.1);
+-o-box-shadow: 0 0 1px rgba(0,0,0,.1);
+box-shadow: 0 0 1px rgba(0,0,0,.1);
+background: white;
+margin: 0 auto;
+}
+
+.album_image {
+    float: left;
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+}
+
+.album_image img {
+    width: 100px;
+    height: auto;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.btn-bordered {
+    border-width: 1px;
+    border-style: solid;
+}
+
+.btn-bordered-primary {
+
+    background-color: transparent;
+    border-color: #1FAE5B;
+}
+
+.wrap {
+  width: 95%;
+  margin: 2em auto;
+
+}
+a:not([href]):not([tabindex]):hover {
+    color: white;
+    background-color: #1FAE5B;
+}
+
+
+ .music-listing__row {
+    clear: both;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+ .music-listing__number {
+    float: left;
+    width: 50px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    position: relative;
+    margin-right: 10px;
+}
+
+.music-listing__row-actions {
+    height: 30px;
+    margin-right: 10px;
+    text-align: right;
+    line-height: 30px;
+    float: right;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all .01s ease-out;
+    -moz-transition: all .01s ease-out;
+    -ms-transition: all .01s ease-out;
+    -o-transition: all .01s ease-out;
+    transition: all .01s ease-out;
+}
+
+.music-listing__artist-name {
+    font-weight: 700;
+}
+/* End page */

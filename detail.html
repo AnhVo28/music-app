@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Music Application</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="detail.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <header class="flex">
+    <div class="logo">
+      <a class="logo-link" href="#/">
+        <i class="logo-icon fa fa-stumbleupon"></i>
+
+      </a>
+    </div>
+    <div class="form-group logo-search">
+      <div>
+        <input type="text" class="form-control" placeholder="Search music">
+        <i class="fa fa-search search-icon" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="form-group logo-cat">
+      <select class="form-control" id="sel1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+    </div>
+  </header>
+  <div class="content-wrap flex">
+    <div class="side-bar">
+      <ul>
+        <li id="user-menu" class="nav-item flex">
+
+          <a class="nav-link profile" href="#/pages/profile">
+            <img src="img/user.png" alt="" class="img20_20 rounded-circle">
+            <span class="name label helper-tooltip-measured">Anh Vo</span>
+          </a>
+          <div class="actions">
+            <a class="action-btn" href="#/dashboard">
+              <i class="action-icon fa fa-bell"></i>
+            </a>
+            <i id="user-settings-btn" class="action-icon fa fa-gear"></i>
+          </div>
+
+        </li>
+        <li class="01 nav-item">
+          <a class="nav-link profile" href="#/dashboard">
+            <i class="icon fa fa-inbox"></i>
+            <span class="label helper-tooltip-measured">Dashboard</span>
+          </a>
+        </li>
+        <li class="02 nav-item active">
+          <a class="nav-link profile" href="#/artist-list">
+            <i class="icon fa fa-headphones"></i>
+            <span class="label helper-tooltip-measured">Artists</span>
+          </a>
+        </li>
+        <li class="03 nav-item">
+          <a class="nav-link profile" href="#/albums">
+            <i class="icon fa fa-bar-chart"></i>
+            <span class="label helper-tooltip-measured">Albums</span>
+          </a>
+        </li>
+        <li class="04 nav-item"></li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <!-- Banner -->
+      <div class="banner">
+        <div class="artist-inner">
+
+          <div class="artist-img" data-ng-show="artistImage">
+            <img class="rounded-circle img-polaroid" src="img/artist1.jpg">
+          </div>
+
+          <h3 class="ng-binding">
+            The lunatics
+          </h3>
+
+          <h5 class="ng-binding">
+            Great music inspired by early electronic sounds, combining the symphony of classical instruments and complete surrounding
+          </h5>
+
+          <div class="artist-style">
+            <div class="artist-genre ng-scope" ng-repeat="genre in artistGenre">
+              <span class="ng-binding">Pop</span>
+            </div>
+            <div class="artist-genre ng-scope" ng-repeat="genre in artistGenre">
+              <span class="ng-binding">Rock</span>
+            </div>
+            <div class="artist-genre ng-scope" ng-repeat="genre in artistGenre">
+              <span class="ng-binding">Folk</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- End banner -->
+
+      <!-- Artists subheader -->
+      <div class="artist-sub-header">
+
+        <div class="artist-stats-block">
+          <div class="share-artist__buttons">
+            <a href="#" class="btn-icon btn-icon-sm btn-twitter" tooltip-placement="bottom" tooltip="Twitter" tooltip-append-to-body="true"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="btn-icon btn-icon-sm btn-facebook" tooltip-placement="bottom" tooltip="Facebook" tooltip-append-to-body="true"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="btn-icon btn-icon-sm btn-google-plus" tooltip-placement="bottom" tooltip="Google plus" tooltip-append-to-body="true"><i class="fa fa-google-plus"></i></a>
+            <a href="#" class="btn-icon btn-icon-sm btn-pinterest" tooltip-placement="bottom" tooltip="Pinterest" tooltip-append-to-body="true"><i class="fa fa-pinterest"></i></a>
+            <a href="#" class="btn-icon btn-icon-sm btn-instagram" tooltip-placement="bottom" tooltip="Instagram" tooltip-append-to-body="true"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="artist-stats-block pull-right">
+          <button class="btn btn-default" onClick="artist.follow()">Follow artist</button>
+        </div>
+
+      </div>
+
+      <!-- End Artists subheader -->
+      <div class="page">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 panel ">
+              <div class="wrap">
+                <div class="deatail-box">
+                  <!-- Title -->
+                  <div class="title-box">
+                    <div class="album_image">
+                      <img  alt="album image " src="img/album1.jpg">
+                    </div>
+                    <div class="album_name">
+                      <p class="text-muted">
+                        April 2010
+                      </p>
+                      <h4 class="ng-binding">
+                        The king of Freedom
+                      </h4>
+                      <div>
+                        <a class="btn btn-bordered btn-bordered-primary">Save this album</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End title -->
+                  <!-- Music song -->
+                  <div class="music-listing__row ">
+                    <div class="music-listing__number ">
+                      1
+                    </div>
+                    <div class="music-listing__name">
+                      <div class="music-listing__thumbnail">
+                      </div>
+                      <div class="music-listing__artist-name ">
+                        The lunatics
+                      </div>
+                      <div class="music-listing__song-name">
+                        Come Together
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="music-listing__row ">
+                    <div class="music-listing__number ">
+                      2
+                    </div>
+                    <div class="music-listing__name">
+                      <div class="music-listing__thumbnail">
+                      </div>
+                      <div class="music-listing__artist-name ">
+                        The lunatics
+                      </div>
+                      <div class="music-listing__song-name">
+                        Drive my car
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="music-listing__row ">
+                    <div class="music-listing__number ">
+                      3
+                    </div>
+                    <div class="music-listing__name">
+                      <div class="music-listing__thumbnail">
+                      </div>
+                      <div class="music-listing__artist-name ">
+                        The lunatics
+                      </div>
+                      <div class="music-listing__song-name">
+                        All moving
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
