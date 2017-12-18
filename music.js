@@ -71,7 +71,7 @@ function showInfo(j) {
                 info += '<div class="album_name">';
                 info += '<p class="text-muted">' + data.items[y].album_type + '</p>';
                 info += '<h4 class="ng-binding">' + data.items[y].name + '</h4>';
-                info += '<div><a href="' + data.items[y].external_urls.spotify + '" class="btn btn-bordered btn-bordered-primary">Show more</a></div>';
+                info += '<div><a href="' + data.items[y].external_urls.spotify + '" class="btn btn-bordered btn-bordered-primary" target="_blank">Show more</a></div>';
                 info += '</div>';
                 showMusic(data,y);
                 info += '</div>';
@@ -93,7 +93,7 @@ function showInfo(j) {
 function showMusic(data,x) {
     var dat = data;
     var albumId = dat.items[x].id;
-    var url2 = 'https://api.spotify.com/v1/albums/' + albumId + '/tracks';
+    var url2 = 'https://api.spotify.com/v1/albums/' + albumId + '/tracks?limit=5';
     var xml = new XMLHttpRequest();
     xml.open("GET", url2, true);
     xml.setRequestHeader('Authorization', 'Bearer ' + accessToken);
@@ -102,7 +102,7 @@ function showMusic(data,x) {
         if (xml.readyState == 4 && xml.status == 200) {
             var jsonObj = JSON.parse(xml.responseText);
             var list = '<div class="music-listing">';
-            for (var z = 0; z < 5; z++) {
+            for (var z = 0; z < jsonObj.items.length; z++) {
                 var num = z + 1;
                 list += '<div class="music-listing__row ">';
                 list += '<div class="music-listing__number ">' + num + '</div>';
